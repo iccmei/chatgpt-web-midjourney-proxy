@@ -14,6 +14,7 @@ export default {
     exportSuccess: '导出成功',
     import: '导入',
     importSuccess: '导入成功',
+    hide: '隐藏',
     clear: '清空',
     clearSuccess: '清空成功',
     yes: '是',
@@ -68,6 +69,18 @@ export default {
     chatHistory: '聊天记录',
     theme: '主题',
     language: '语言',
+    webdavSync: 'WebDAV 同步',
+    webdavConfig: '配置',
+    webdavUrl: 'WebDAV 地址',
+    webdavUsername: '用户名',
+    webdavPassword: '密码',
+    webdavConfigError: '请填写完整的 WebDAV 配置',
+    webdavNotConfigured: '请先配置 WebDAV',
+    webdavSyncSuccess: '同步成功',
+    webdavSyncError: '同步失败',
+    webdavTest: '测试连接',
+    webdavUpload: '上传',
+    webdavDownload: '下载',
     api: 'API',
     reverseProxy: '反向代理',
     timeout: '超时',
@@ -175,7 +188,7 @@ export default {
     ,tQuality:'画质'
     ,tStyles:'艺术程度'
     ,tVersion:'模型版本'
-    ,dalleInfo:' 说明：   <li>1 dall-e 是openAi提供的画图模型</li>  <li>2 openAi的图片有时效性，请做好备份</li>   <li>3 注意：1790px的图片价格是双倍</li> '
+    ,dalleInfo:' 说明：   <li>1 dall-e 是openAi提供的画图模型</li>  <li>2 openAi的图片有时效性，请做好备份</li>   <li>3 注意：1790px的图片价格是双倍</li> <li>4 注意：dall-e-2、gpt-image-1 支持多图参考</li> '
     ,version:'版本'
     ,size:'尺寸'
     ,blendInfo:'说明： <li>1 合成至少2张图片</li> <li>2 最多可传6张图</li> '
@@ -316,7 +329,7 @@ export default {
     ,pro:'高表现'
     ,needImg:'请传参考图才生效！'
     ,seed:'种子数字 1~2147483647'
-    ,klingInfo:'说明： <li>1. 高表现是3.5倍的价格</li>  <li>2. 10s是2倍的价格</li> <li>3. 尾帧必须有参考图片才生效</li> <li>4. v1.5 v1.6的价格都是v1.0的2倍</li>'
+    ,klingInfo:'说明： <li>1. 高表现是3.5倍的价格</li>  <li>2. 10s是2倍的价格</li> <li>3. 尾帧必须有参考图片才生效</li> <li>4. v1.5 v1.6的价格都是v1.0的2倍</li><li>5. v2-master的价格都是v1.0的10倍</li>'
 
     ,camera_type:'镜头'
     ,cnull:'智能匹配'
@@ -372,6 +385,17 @@ export default {
   
    ,server_load:'服务端获取'
    ,model_select:'模型选择'
+
+   ,riffabout:'Riffusion 相关'
+   ,riffkeyPlaceholder:'Riffusion 的API Key 可不填'
+   ,riffserver:'Riffusion 接口地址'
+   ,riffinfo:'说明'
+
+   ,editImage:'图片编辑'
+   ,editVideo:'图生视频'
+   ,moreset:'更多参数'
+
+   
   },
 
 	draw: {
@@ -501,7 +525,7 @@ export default {
   }
   ,video:{
     menu:"视频",
-    menuinfo:'Luma等 视频创作',
+    menuinfo:'Veo 可灵 pixverse等 视频创作',
     descpls:'视频创作描述',
     lumaabout:"Luma 相关",
     lumaserver:"Luma 接口地址",
@@ -533,7 +557,9 @@ export default {
     repeat2:'过期.重新获取',
 
     rwgen3turbo:'版本: Gen-3 Alpha Turbo',
-    gen3a_turbo_img:'Gen-3 Alpha Turbo 必须带图',
+    gen3a_turbo_img:'Gen-3 Alpha Turbo 必须带图'
+
+    ,selectModel:'请选择模型'
 
   }
   ,dance:{
@@ -558,6 +584,9 @@ export default {
     moban2:'模版名称',
     use:'使用',
   }
+  ,'录音':'录音'
+  ,'禁用stream':'禁用stream'
+  ,'当禁用stream时,则使用非流式数据':'当禁用stream时,则使用非流式数据'
 
 
 }
